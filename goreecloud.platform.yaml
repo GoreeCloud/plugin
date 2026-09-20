@@ -4,7 +4,7 @@
     "type": "application",
     "id": "goreecloud-plugin",
     "product_name": "GoreeCloud ChatGPT Plugin",
-    "repository": "GoreeCloud/goreecloud-plugin"
+    "repository": "GoreeCloud/plugin"
   },
   "lifecycle": "development",
   "version": "0.1.0-dev",
