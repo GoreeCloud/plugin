@@ -1,4 +1,6 @@
-# GoreeCloud ChatGPT Plugin — Feature Roadmap
+# GoreeCloud ChatGPT Plugin — Planned Features
+
+> **Authority:** Repository-native planned-feature record. The former Drive roadmap is retired after verified migration.
 
 **Status:** Active roadmap control
 **As of:** 2026-09-09
@@ -30,7 +32,7 @@ This file is the repository-side feature roadmap control for GoreeCloud ChatGPT 
 
 ## Maintenance and synchronization
 
-- Keep this repository file synchronized with the canonical Drive roadmap.
+- Keep this repository file
 - Do not mark planned work complete from documentation alone.
 - Record implementation and verification evidence before lifecycle promotion.
 - Reconcile this roadmap whenever authoritative project scope, current platform requirements, feature priority, implementation status, cancellation/supersession state, dependencies, or verification evidence changes.
