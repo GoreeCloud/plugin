@@ -1,7 +1,7 @@
 # Historical Drive Feature Roadmap Migration Source — GoreeCloud ChatGPT Plugin
 
-> **Status:** Historical, non-authoritative migration evidence.  
-> **Source:** Former Google Drive roadmap, captured during repository migration on 2026-09-27.  
+> **Status:** Historical, non-authoritative migration evidence.
+> **Source:** Former Google Drive roadmap, captured during repository migration on 2026-09-27.
 > **Rule:** Do not synchronize this file with Google Drive. Current feature truth is in `IMPLEMENTED-FEATURES.md`, `PLANNED-FEATURES.md`, and `CHANGELOGS.md`.
 
 GoreeCloud ChatGPT Plugin
