@@ -2,7 +2,8 @@ import { access, readFile } from "node:fs/promises";
 
 const requiredRootFiles = [
   "README.md",
-  "SPECIFICATIONS.md",
+  "PROJECT-SPECIFICATIONS.md",
+  "PROJECT-RECORD.md",
   "FEATURES.md",
   "IMPLEMENTED-FEATURES.md",
   "PLANNED-FEATURES.md",
@@ -22,6 +23,26 @@ for (const file of requiredRootFiles) {
   await access(file);
   const content = await readFile(file, "utf8");
   if (!content.trim()) throw new Error(`${file} is empty`);
+}
+
+const deprecatedRootFiles = ["SPECIFICATIONS.md"];
+for (const file of deprecatedRootFiles) {
+  try {
+    await access(file);
+    throw new Error(`${file} is deprecated; consolidate project authority into PROJECT-SPECIFICATIONS.md and PROJECT-RECORD.md`);
+  } catch (error) {
+    if (error?.code !== "ENOENT") throw error;
+  }
+}
+
+const readme = await readFile("README.md", "utf8");
+for (const requiredLink of ["PROJECT-SPECIFICATIONS.md", "PROJECT-RECORD.md", "IMPLEMENTED-FEATURES.md", "PLANNED-FEATURES.md", "CHANGELOGS.md"]) {
+  if (!readme.includes(requiredLink)) throw new Error(`README.md must reference ${requiredLink}`);
+}
+
+const projectSpec = await readFile("PROJECT-SPECIFICATIONS.md", "utf8");
+if (projectSpec.includes("canonical GoreeCloud Drive project specification")) {
+  throw new Error("PROJECT-SPECIFICATIONS.md must not declare Google Drive as current project-specification authority");
 }
 
 const manifest = JSON.parse(await readFile("goreecloud.platform.yaml", "utf8"));
