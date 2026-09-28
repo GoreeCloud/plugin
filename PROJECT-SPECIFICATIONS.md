@@ -1,11 +1,11 @@
 # GoreeCloud ChatGPT Plugin — Project Specifications
 
-**Document Type:** Repository-Native Project Specification  
-**Status:** Active specification / Development  
-**Project:** GoreeCloud ChatGPT Plugin  
-**Repository:** GoreeCloud/plugin  
-**Authority:** Repository-local project specification  
-**License:** AGPL-3.0-only  
+**Document Type:** Repository-Native Project Specification
+**Status:** Active specification / Development
+**Project:** GoreeCloud ChatGPT Plugin
+**Repository:** GoreeCloud/plugin
+**Authority:** Repository-local project specification
+**License:** AGPL-3.0-only
 **Last Updated:** 2026-09-27
 
 ## 1. Purpose
