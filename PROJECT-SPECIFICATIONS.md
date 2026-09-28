@@ -449,7 +449,31 @@ The accepted repository still intentionally lacks:
 
 The repository Platform Contract declaration also requires reconciliation with current GoreeCloud platform governance before production qualification.
 
-## 21. Maintenance
+## 21. Current Dependency Baseline
+
+The accepted repository currently declares the following direct runtime/development baseline:
+
+- Node.js: >=22 <23;
+- @modelcontextprotocol/ext-apps: 1.0.1;
+- @modelcontextprotocol/sdk: 1.30.0;
+- express: 5.1.0;
+- zod: 3.25.0;
+- TypeScript: 5.9.2;
+- tsx: 4.23.13.
+
+These versions describe accepted repository state, not permanent product requirements. Dependency changes require compatibility, security, provenance, licensing, and validation review.
+
+A reviewed lockfile and reproducible dependency resolution remain required before Release Candidate or Stable qualification.
+
+## 22. Current Platform-System Boundary
+
+The accepted repository Platform Contract file currently uses schema 0.2 and declares Manager, Privacy Shield, Wardveil Security, Everkeep, Glaze UI, Mesh, and Identity as applicable but blocked/unaccepted.
+
+That declaration is historical/current repository state. It must not be treated as evidence that schema 0.2 or its recorded Glaze UI version remains the latest governing GoreeCloud platform authority.
+
+Before production or Stable qualification, the repository must migrate to the then-current applicable Platform Contract and platform-system requirements and produce accepted evidence for each applicable integration or explicit non-applicability.
+
+## 23. Maintenance
 
 PROJECT-SPECIFICATIONS.md must be updated when material scope, architecture, authentication, authorization, tool classes, OpenAI integration boundaries, platform requirements, privacy/security requirements, deployment model, or acceptance gates change.
 
