@@ -2,7 +2,8 @@ import { access, readFile } from "node:fs/promises";
 
 const requiredRootFiles = [
   "README.md",
-  "SPECIFICATIONS.md",
+  "PROJECT-SPECIFICATIONS.md",
+  "PROJECT-RECORD.md",
   "FEATURES.md",
   "IMPLEMENTED-FEATURES.md",
   "PLANNED-FEATURES.md",
@@ -22,6 +23,13 @@ for (const file of requiredRootFiles) {
   await access(file);
   const content = await readFile(file, "utf8");
   if (!content.trim()) throw new Error(`${file} is empty`);
+}
+
+try {
+  await access("SPECIFICATIONS.md");
+  throw new Error("SPECIFICATIONS.md is retired; use PROJECT-SPECIFICATIONS.md");
+} catch (error) {
+  if (error?.code !== "ENOENT") throw error;
 }
 
 const manifest = JSON.parse(await readFile("goreecloud.platform.yaml", "utf8"));
