@@ -1,11 +1,11 @@
 # GoreeCloud ChatGPT Plugin — Project Specifications
 
-**Document Type:** Repository-Native Project Specification  
-**Status:** Active specification / Development  
-**Project:** GoreeCloud ChatGPT Plugin  
-**Repository:** GoreeCloud/plugin  
-**License:** AGPL-3.0-only  
-**Authority:** Repository-local project specification  
+**Document Type:** Repository-Native Project Specification
+**Status:** Active specification / Development
+**Project:** GoreeCloud ChatGPT Plugin
+**Repository:** GoreeCloud/plugin
+**License:** AGPL-3.0-only
+**Authority:** Repository-local project specification
 **Last Updated:** 2026-09-27
 
 ## 1. Role and purpose
@@ -51,11 +51,11 @@ These facts do not establish Release Candidate, Stable, production deployment, e
 
 The target architecture is:
 
-Conversational client  
-→ GoreeCloud Plugin application experience  
-→ GoreeCloud MCP server  
-→ authentication and authorization boundary  
-→ GoreeCloud integration/API layer  
+Conversational client
+→ GoreeCloud Plugin application experience
+→ GoreeCloud MCP server
+→ authentication and authorization boundary
+→ GoreeCloud integration/API layer
 → approved GoreeCloud applications, services, documentation, repositories, and operational systems
 
 Core business rules that belong to GoreeCloud services must remain in reusable GoreeCloud APIs or services rather than being embedded only in a client-specific plugin UI.
@@ -149,10 +149,10 @@ No future tool becomes implemented merely because it is named in this specificat
 
 The preferred model is:
 
-Plugin/application  
-→ dedicated service or delegated identity  
-→ narrowly scoped credential/token  
-→ approved API  
+Plugin/application
+→ dedicated service or delegated identity
+→ narrowly scoped credential/token
+→ approved API
 → permitted resource/operation
 
 Dedicated service identities should be preferred over ordinary personal or administrative credentials where the underlying system supports them.
