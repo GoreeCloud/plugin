@@ -4,13 +4,12 @@
 
 **Status:** Active roadmap control
 **As of:** 2026-09-09
-**Authoritative project record:** Project Specification — ChatGPT Plugin
-**Canonical repository:** GoreeCloud/goreecloud-plugin
-**Drive control:** `GoreeCloud/Feature Roadmap/GoreeCloud ChatGPT Plugin/FEATURE-ROADMAP.docx`
+**Authoritative project specification:** `PROJECT-SPECIFICATIONS.md`
+**Canonical repository:** GoreeCloud/plugin
 
 ## Purpose
 
-This file is the repository-side feature roadmap control for GoreeCloud ChatGPT Plugin. It records current planned and recommended feature work without replacing the authoritative project record, implementation evidence, release gates, or GoreeCloud Tasks Management.
+This file is the repository-native planned-feature authority for GoreeCloud ChatGPT Plugin. It records planned and recommended feature work without replacing PROJECT-SPECIFICATIONS.md, implementation evidence, release gates, PROJECT-RECORD.md, or GoreeCloud Tasks Management.
 
 ## Roadmap
 
@@ -23,7 +22,7 @@ This file is the repository-side feature roadmap control for GoreeCloud ChatGPT 
 
 ## Phase 1 acceptance evidence
 
-- Pull request: `GoreeCloud/goreecloud-plugin#1`
+- Pull request: `GoreeCloud/plugin#1`
 - Accepted `main` revision: `9ebe86169ae57a310ee745a88aef6826c4890b8a`
 - Exact-head PR CI: run `34313749897` — passed all required gates.
 - Post-merge `main` CI: run `34313814872` — passed all required gates.
