@@ -1,12 +1,24 @@
 # GoreeCloud ChatGPT Plugin
 
-GoreeCloud ChatGPT Plugin is the GoreeCloud-owned conversational integration layer for approved ChatGPT, Codex, and compatible MCP/App clients.
+GoreeCloud ChatGPT Plugin is GoreeCloud's controlled conversational integration layer for approved ChatGPT, Codex, and compatible MCP-based clients.
 
 ## Current lifecycle
 
-**Development — Phase 1 foundation.** This repository currently provides only a loopback-bound MCP development server, local health/readiness endpoints, and one read-only self-health MCP tool. It does **not** provide access to GoreeCloud Drive, GitHub, tasks, user data, infrastructure, shell, filesystems, databases, deployment controls, or administrative operations.
+**Development — Phase 1 foundation accepted.**
 
-The repository is not Release Candidate, Stable, production-ready, or approved for remote publication.
+The repository currently provides a loopback-bound MCP development service, local health/readiness endpoints, and one read-only self-health MCP tool.
+
+It does **not** provide external GoreeCloud data access, controlled writes, operational actions, administrative/destructive actions, production deployment, or an accepted remote ChatGPT app surface.
+
+## Project authority
+
+- [PROJECT-SPECIFICATIONS.md](./PROJECT-SPECIFICATIONS.md) — normative project requirements, architecture, security/privacy boundaries, and acceptance gates.
+- [PROJECT-RECORD.md](./PROJECT-RECORD.md) — significant project history, repository transitions, accepted milestones, and evidence.
+- [IMPLEMENTED-FEATURES.md](./IMPLEMENTED-FEATURES.md) — accepted implementation state.
+- [PLANNED-FEATURES.md](./PLANNED-FEATURES.md) — planned capability and obligation state.
+- [CHANGELOGS.md](./CHANGELOGS.md) — release- and repository-oriented change history.
+
+After project-record migration acceptance and default-branch readback, the GitHub repository is the authoritative location for project specifications and project history.
 
 ## Implemented Phase 1 surface
 
@@ -14,11 +26,11 @@ The repository is not Release Candidate, Stable, production-ready, or approved f
 - Local health endpoint: `http://127.0.0.1:8787/healthz`
 - Local readiness endpoint: `http://127.0.0.1:8787/readyz`
 - MCP tool: `goreecloud.get_service_health`
-  - read-only
-  - self-service status only
-  - no external network access
-  - no mutation capability
-- Fail-closed loopback binding in the unauthenticated Phase 1 baseline
+  - read-only;
+  - self-service status only;
+  - no external GoreeCloud data access;
+  - no mutation capability.
+- Fail-closed loopback binding in the unauthenticated Phase 1 baseline.
 
 ## Development
 
@@ -32,22 +44,24 @@ npm run build
 npm start
 ```
 
-Configuration is documented in `.env.example`. The Phase 1 server refuses non-loopback host bindings because authentication and remote publication are not yet implemented.
+Configuration is documented in `.env.example`.
+
+The Phase 1 server refuses non-loopback host bindings because authentication and remote publication are not yet implemented.
 
 ## Governance
 
-The repository follows the GoreeCloud Platform Contract 0.2 and declares its current blocked/nonconformant platform-system state in `goreecloud.platform.yaml`. Missing platform integrations are intentionally represented as blockers rather than hidden or implied as complete.
+The current repository Platform Contract declaration reflects accepted repository state but is not proof of conformance with the latest GoreeCloud platform governance.
 
-See:
+Missing platform integrations and current-contract reconciliation remain blockers for later production/Stable qualification.
 
-- `SPECIFICATIONS.md` — current technical specification
-- `FEATURES.md` — implemented and planned capabilities
-- `FEATURE-ROADMAP.md` — roadmap control
-- `SECURITY.md` — security boundaries and reporting guidance
-- `USER-MANUAL.md` — current Development usage
-- `docs/architecture.md` — Phase 1 architecture and trust boundaries
-- `docs/recovery.md` — recovery model
-- `deploy/README.md` — deployment prohibition/current gate
+Additional records:
+
+- `FEATURES.md` — human-readable current capability summary;
+- `SECURITY.md` — security boundaries and reporting guidance;
+- `USER-MANUAL.md` — current Development usage;
+- `docs/architecture.md` — Phase 1 architecture and trust boundaries;
+- `docs/recovery.md` — recovery model;
+- `deploy/README.md` — deployment prohibition/current gate.
 
 ## License
 
