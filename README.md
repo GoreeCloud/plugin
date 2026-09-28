@@ -40,9 +40,12 @@ The repository follows the GoreeCloud Platform Contract 0.2 and declares its cur
 
 See:
 
-- `SPECIFICATIONS.md` — current technical specification
+- `PROJECT-SPECIFICATIONS.md` — canonical project specification
+- `PROJECT-RECORD.md` — significant project history and evidence
 - `FEATURES.md` — implemented and planned capabilities
-- `FEATURE-ROADMAP.md` — roadmap control
+- `IMPLEMENTED-FEATURES.md` — verified implemented-feature state
+- `PLANNED-FEATURES.md` — planned feature state
+- `CHANGELOGS.md` — release and repository change history
 - `SECURITY.md` — security boundaries and reporting guidance
 - `USER-MANUAL.md` — current Development usage
 - `docs/architecture.md` — Phase 1 architecture and trust boundaries
