@@ -1,10 +1,10 @@
 # GoreeCloud ChatGPT Plugin — Project Record
 
-**Document Type:** Repository-Native Project Record  
-**Status:** Active  
-**Project:** GoreeCloud ChatGPT Plugin  
-**Repository:** GoreeCloud/plugin  
-**Authority:** Repository-local project record  
+**Document Type:** Repository-Native Project Record
+**Status:** Active
+**Project:** GoreeCloud ChatGPT Plugin
+**Repository:** GoreeCloud/plugin
+**Authority:** Repository-local project record
 **Last Updated:** 2026-09-27
 
 ## 2026-09-27 — Project specification migration staged
