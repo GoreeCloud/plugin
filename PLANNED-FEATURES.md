@@ -2,9 +2,9 @@
 
 > **Authority:** Repository-native planned-feature record. Plans are not implementation evidence.
 
-**Status:** Active roadmap control  
-**As of:** 2026-09-27  
-**Authoritative project specification:** PROJECT-SPECIFICATIONS.md  
+**Status:** Active roadmap control
+**As of:** 2026-09-27
+**Authoritative project specification:** PROJECT-SPECIFICATIONS.md
 **Canonical repository:** GoreeCloud/plugin
 
 ## Purpose
